@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.title("FBL Operations AI ChatBot")
+st.title("FBL HR AI ChatBot")
 
 user_input = st.text_input("Ask a question:")
 
@@ -18,5 +18,6 @@ if st.button("Submit") and user_input:
             #st.markdown(f"**Source:** {data['source']}")
         except Exception as e:
             st.error(f"Error: {e}")
+
 
 
