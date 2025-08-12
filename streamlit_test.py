@@ -9,7 +9,7 @@ if st.button("Submit") and user_input:
     with st.spinner("Thinking..."):
         try:
             response = requests.post(
-                "http://localhost:5000/query",
+                "https://d9cd03683fc7.ngrok-free.app",
                 json={"question": user_input}
             )
             data = response.json()
@@ -18,3 +18,4 @@ if st.button("Submit") and user_input:
             #st.markdown(f"**Source:** {data['source']}")
         except Exception as e:
             st.error(f"Error: {e}")
+
